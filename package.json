@@ -1,1 +1,17 @@
-ins
+{
+    "name": "hello-express",
+    "version": "0.0.1",
+    "description": "A simple Express app",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "discord.js": "^14.0.0",
+        "dotenv": "^16.4.5",
+        "express": "^4.17.1"
+    },
+    "engines": {
+        "node": "20.x"
+    }
+}
