@@ -1,7 +1,6 @@
 const express = require('express');
-require('dotenv').config();
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
   res.send('Your Discord bot is active!'); 
@@ -12,7 +11,6 @@ app.listen(port, () => {
   console.log(`Web server listening on port ${port}`);
 });
 
-require('dotenv').config();
 const { Client, IntentsBitField, GatewayIntentBits } = require('discord.js');
 const client = new Client({ 
     intents: [
